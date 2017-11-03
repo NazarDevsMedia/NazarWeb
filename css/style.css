@@ -1,0 +1,348 @@
+/*NAV BAR*/
+.navbar-default {
+  background-color: #f25015;
+  border-color: #ea9b5d;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+.navbar-default .navbar-brand {
+  color: #eee;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #0d0b01;
+}
+.navbar-default .navbar-text {
+  color: #eee;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #eee;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0d0b01;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #f25015;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #eee;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #0d0b01;
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #0d0b01;
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0d0b01;
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #0d0b01;
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ea9b5d;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ea9b5d;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eee;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eee;
+}
+.navbar-default .navbar-link {
+  color: #eee;
+}
+.navbar-default .navbar-link:hover {
+  color: #0d0b01;
+}
+
+
+div#myNavbar{
+  text-align: center;
+  font-size: 1.2em;
+  padding-left: 35%;
+}
+
+/*BODY*/
+
+body{
+  font-family: 'PT Sans', sans-serif, 'PT Serif', serif;
+  font-size: 1.4em;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  position: relative;
+}
+
+.container{
+  background-color: #fff;
+}
+
+#topbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f25015; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#topbtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*JUMBOTRON*/
+.jumbotron{
+  text-align: center;
+  background-color: #fff;
+  display: none;
+}
+
+/*FACE IMG*/
+img#face{
+  width: 13em;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  border-radius: 10%;
+}
+
+.overl {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /*background-color: #f25015;*/
+  background: #f1e767;
+  background: -moz-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #f1e767), color-stop(100%, #feb645));
+  background: -webkit-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -o-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -ms-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(135deg, #f1e767 0%, #feb645 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+}
+
+.overl:hover .overlay {
+  opacity: 1;
+}
+
+.overlaytext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*SIDE MENU*/
+.gradient1{
+  background: #f1e767;
+  background: -moz-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #f1e767), color-stop(100%, #feb645));
+  background: -webkit-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -o-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: -ms-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(135deg, #f1e767 0%, #feb645 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.aboutme{
+  font-size: 1.2em;
+  padding-left: 10%;
+}
+
+.titelsh2 {
+  text-align: center;
+  position: relative;
+  margin: 8% 0 10% 0;
+}
+
+.row{
+  float: none;
+  text-align: center;
+  width:100%;
+  padding:10px;
+}
+
+.thumbnail{
+  border: none;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 15%;
+}
+
+img.skillsimg{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  display: inline-block;
+}
+
+img#nodejs{
+  height: 164px;
+}
+
+img#php{
+  height: 164px;
+}
+
+
+#starfull{
+  display: none;
+}
+
+.berufinfo{
+  font-size: 1.4em;
+  padding: 0.4em 0 0.4em 0.4em;
+}
+
+.berbox{
+  margin: 0 0 7% 0;
+  display: block;
+  border-left: 4px solid #f1e767;
+}
+
+.berboxright{
+  margin: 0 0 7% 0;
+  display: block;
+  border-right: 4px solid #f1e767;
+  text-align: right;
+}
+
+
+.studiumbox{
+  margin: 0 0 15% 0;
+}
+
+.uniimg{
+  width: 85%;
+  border-radius: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.uniinfo{
+  font-size: 1.4em;
+  padding-top: 10%;
+  margin: auto;
+  display: block;
+}
+
+.unidneprtext{
+  padding-left: 10%;
+}
+
+
+.footer{
+  height: auto;
+  text-align: center;
+  padding-top: 3.1em;
+  margin-top: 15%;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d5d8ca;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0d0b01;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0d0b01;
+    background-color: #ea9b5d;
+  }
+
+  div#myNavbar{
+    text-align: center;
+    padding-left: 0;
+  }
+
+}
+@media only screen and (max-width: 467px) {
+
+  body{
+    font-size: 1.2em;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+   h3 {
+      font-size: 1.2em;
+   }
+
+    p.uniinfo {
+      font-size: 1.2em;
+    }
+
+    .berbox{
+      width: 100%;
+    }
+
+    .berufinfo{
+      font-size: 1.2em;
+    }
+
+    div#myNavbar{
+      text-align: center;
+      padding-left: 0;
+    }
+
+    img#nodejs{
+      height: 50px;
+    }
+
+    img#php{
+      height: 50px;
+    }
+}
